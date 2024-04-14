@@ -34,6 +34,7 @@ Models
 `models.PureSVDModel`
 `models.RandomModel`
 `models.BayesProbMF`
+`models.BayesProbMF_V2`
 """
 
 from .implicit_als import ImplicitALSWrapperModel
@@ -43,6 +44,7 @@ from .popular_in_category import PopularInCategoryModel
 from .pure_svd import PureSVDModel
 from .random import RandomModel
 from .bayesprob_mf import BayesProbMF
+from .bayesprob_mf_v2 import BayesProbMF_V2
 
 try:
     from .lightfm import LightFMWrapperModel
@@ -65,4 +67,5 @@ __all__ = (
     "RandomModel",
     "DSSMModel",
     "BayesProbMF",
+    "BayesProbMF_V2",
 )
